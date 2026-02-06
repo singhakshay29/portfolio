@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
 
@@ -138,66 +137,58 @@ export const navItems = [
       image: "/testimonial5.jpeg"
     },
   ];
-  
-  export const companies = [
-    {
-      id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
-    },
-    {
-      id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
-    },
-    {
-      id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
-    },
-    {
-      id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
-    },
-    {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
-  ];
+
   
   export const workExperience = [
     {
       id: 1,
-      title: "Alpha",
-      desc: "Completed the Alpha (DSA with Java) course by Apna College.",
-      className: "md:col-span-2",
-      thumbnail: "/Alpha.png",
+      role: "Frontend Developer",
+      company: "GSX Solutions Private Limited",
+      duration: "Jan 2025 – Present",
+      desc: [
+        "Developed scalable and responsive user interfaces using React.js for production applications",
+        "Built reusable UI components to maintain consistency across application modules",
+        "Integrated REST APIs and managed application data flow efficiently",
+        "Debugged UI issues and improved overall user experience",
+        "Collaborated with product and backend teams to deliver features on time",
+      ],
     },
     {
       id: 2,
-      title: "Delta",
-      desc: "Completed the Delta (Full Stack Web Devlopment) course by Apna College.",
-      className: "md:col-span-2", 
-      thumbnail: "/Delta.png",
+      role: "Frontend Developer",
+      company: "UniPro World Private Limited",
+      duration: "Sep 2023 – Dec 2024",
+      desc: [
+        "Built responsive web interfaces using React.js, HTML, CSS, and JavaScript",
+        "Optimized components and API calls, improving page load performance",
+        "Maintained clean, readable code and documentation",
+        "Fixed UI bugs and enhanced cross-device usability",
+        "Worked closely with project managers to deliver features on time",
+      ],
+    },
+    {
+      id: 3,
+      role: "Service Engineer",
+      company: "TeamLease Services Limited",
+      duration: "Feb 2020 – May 2023",
+      desc: [
+        "Provided technical support and system maintenance",
+        "Worked with cross-functional teams to resolve issues",
+        "Gained hands-on experience in client communication and troubleshooting",
+      ],
     },
   ];
+  
   
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
-      link: "https://github.com/priyansh-priyansh"
+      link: "https://github.com/singhakshay29"
     },
     {
       id: 3,
       img: "/link.svg",
-      link: "https://www.linkedin.com/in/priyansh-bansal/",
+      link: "https://www.linkedin.com/in/akshaysingh29/",
     },
   ];
