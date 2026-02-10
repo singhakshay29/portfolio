@@ -47,7 +47,7 @@ const Hero = () => {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <a href="https://drive.google.com/file/d/1_b0yWiBRlZEkaoziVLWFvwXVTFt45z78/view?usp=share_link?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1lcCbOxwtsWMxrVD3HLvdsljrM9d0R04s/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                   <MagicButton
                     title="View Resume"
                     icon={<FaLocationArrow />}
