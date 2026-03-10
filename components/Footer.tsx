@@ -7,13 +7,13 @@ const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10 relative z-[20]" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
-      </div>
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+  <img
+    src="/footer-grid.svg"
+    alt="grid"
+    className="w-full h-full object-cover  mix-blend-soft-light"
+  />
+</div>
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
@@ -25,11 +25,12 @@ const Footer = () => {
           achieve your goals.
         </p>
 
-        <a href="mailto:akshay2898.as@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:akshay2898.as@gmail.com">
   <MagicButton
     title="Let's get in touch"
     icon={<FaLocationArrow />}
     position="right"
+    otherClasses="pointer-events-auto cursor-pointer"
   />
 </a>
       </div>
