@@ -70,8 +70,7 @@ export const navItems = [
       spareImg: "",
     },
   ];
-  //title: "Payhub",
-  //des: "Infrastructure for Real-time,Scalable,Seamless,Global Real-time Payments in India",
+
   
   export const projects = [
     {

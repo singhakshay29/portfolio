@@ -41,13 +41,13 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Akshay Singh, a Frontend Developer based in India.
+            Hi, I&apos;m Akshay Singh, a Full Stack Developer based in India.
           </p>
 
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <a href="https://drive.google.com/file/d/1lcCbOxwtsWMxrVD3HLvdsljrM9d0R04s/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1h_8-XZSeaVoXIah-ctEzQI4irq6TjN2n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                   <MagicButton
                     title="View Resume"
                     icon={<FaLocationArrow />}
