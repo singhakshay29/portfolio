@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const MagicButton = ({
@@ -5,25 +7,41 @@ const MagicButton = ({
   icon,
   position,
   otherClasses = "",
+  href,
+  handleClick,
 }: {
   title: string;
   icon: React.ReactNode;
   position: "left" | "right";
   otherClasses?: string;
-  handleClick?: () => void;
+  href?: string;
+  handleClick?: () => void | Promise<void>;
 }) => {
+  const onButtonClick = async () => {
+    if (handleClick) {
+      await handleClick();
+    }
+
+    if (href) {
+      window.location.href = href;
+    }
+  };
+
   return (
     <button
       type="button"
-      tabIndex={-1}
-      className="pointer-events-none relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10"
+      onClick={onButtonClick}
+      className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10"
     >
       <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+
       <span
         className={`inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
       >
         {position === "left" && icon}
+
         {title}
+
         {position === "right" && icon}
       </span>
     </button>

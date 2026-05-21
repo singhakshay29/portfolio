@@ -24,13 +24,14 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-
-        <a href="mailto:akshay2898.as@gmail.com">
+        <a
+  href="mailto:akshay2898.as@gmail.com"
+  className="cursor-pointer"
+>
   <MagicButton
     title="Let's get in touch"
     icon={<FaLocationArrow />}
     position="right"
-    otherClasses="pointer-events-auto cursor-pointer"
   />
 </a>
       </div>

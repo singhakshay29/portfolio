@@ -143,7 +143,7 @@ export const navItems = [
       id: 1,
       role: "Frontend Developer",
       company: "GSX Solutions Private Limited",
-      duration: "Jan 2025 – Present",
+      duration: "Jan 2025 – Feb 2026",
       desc: [
         "Developed scalable and responsive user interfaces using React.js for production applications",
         "Built reusable UI components to maintain consistency across application modules",
