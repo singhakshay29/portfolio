@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   description: siteMetadata.description,
   metadataBase: new URL(siteMetadata.siteUrl),
   icons: {
-    icon: '/icons8-p-64.png',
-    shortcut: '/icons8-p-64.png',
-    apple: '/icons8-p-64.png',
+    icon: '/neon-a-icon.svg',
+    shortcut: '/neon-a-icon.svg',
+    apple: '/neon-a-icon.svg',
   },
   openGraph: {
     title: siteMetadata.title,

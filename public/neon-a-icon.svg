@@ -1,0 +1,51 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur1"/>
+      <feMerge><feMergeNode in="blur1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-hard" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="blur2"/>
+      <feMerge><feMergeNode in="blur2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer glow layer -->
+  <path
+    d="M32 10 L13 54 M32 10 L51 54 M19 40 L45 40"
+    fill="none"
+    stroke="url(#g1)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.3"
+    filter="url(#glow-soft)"
+  />
+
+  <!-- Mid glow layer -->
+  <path
+    d="M32 10 L13 54 M32 10 L51 54 M19 40 L45 40"
+    fill="none"
+    stroke="url(#g1)"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.6"
+    filter="url(#glow-hard)"
+  />
+
+  <!-- Bright core -->
+  <path
+    d="M32 10 L13 54 M32 10 L51 54 M19 40 L45 40"
+    fill="none"
+    stroke="url(#g1)"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="1"
+  />
+</svg>

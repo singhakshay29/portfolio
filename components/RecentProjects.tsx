@@ -11,19 +11,23 @@ const RecentProjects = () => {
             A small selection of {' '}
             <span className='text-purple'>recent projects</span>
         </h1>
-        <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-16 mt-10'>
+        <div className='flex flex-wrap items-center justify-center py-4 gap-x-24 gap-y-16 mt-10'>
             {projects.map((project) => (
-                <div key={project.id} className='sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[30.625rem] w-[85vw] px-4 sm:px-0'>
+                <div key={project.id} className='sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[30.625rem] w-[90vw] sm:px-0'>
                     <PinContainer title={project.link} href={project.link}  >
-                            <div className='relative flex items-center justify-center sm:w-[30.625rem] w-full overflow-hidden h-[30vh] mb-10 sm:h-[40vh]'>
-                                <div className='w-full relative h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                    <img src='/bg.png' alt='bg-img' className="absolute inset-0 w-full h-full object-cover opacity-40"/>
+                    <div className='relative flex items-center justify-center sm:w-[30.625rem] w-full overflow-hidden h-[20vh] sm:h-[40vh] mb-10'>
+            <div className='w-full relative h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
+                                <img
+                src='/bg.png'
+                alt='bg-img'
+                className='absolute inset-0 w-full h-full object-cover opacity-40'
+              />
                                 </div>
-                                <img 
-                                    src={project.img} 
-                                    alt={project.title} 
-                                    className="z-10 absolute bottom-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500"
-                                />
+                                <img
+              src={project.img}
+              alt={project.title}
+              className='z-10 absolute bottom-0 w-full h-full sm:object-cover object-contain hover:scale-110 transition-transform duration-500'
+            />
                             </div>
                             <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                                 {project.title}
@@ -43,11 +47,11 @@ const RecentProjects = () => {
                             ))}
                             </div>
 
-                            <div className='flex justify-center items-center'>
-                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>
-                                    View Case Study
-                                </p>
-                                <FaLocationArrow className='ms-3'color="#CBACF9"/>
+                            <div className='flex justify-center items-center flex-shrink-0'>
+                            <p className='lg:text-xl md:text-xs text-xs text-purple whitespace-nowrap'>
+                View Case Study
+              </p>
+              <FaLocationArrow className='ms-2 flex-shrink-0' color='#CBACF9' />
                             </div>
                             </div>
                     </PinContainer>
