@@ -11,7 +11,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "I value close collaboration and clear communication with clients",
+      title: "Focused on building scalable and user-friendly web applications",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -21,7 +21,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I’m flexible with time zones and communication schedules",
+      title: "Adaptable to collaborative teams and fast-paced development environments",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -41,7 +41,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "A tech enthusiast driven by a passion for building things",
+      title: "Passionate about creating interactive, performant, and scalable digital experiences",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -51,7 +51,7 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "Currently sharpening my skills in structured web development",
+      title: "Currently improving my skills in full-stack development, system design, and modern web architecture",
       description: "What I’m working on right now",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -61,7 +61,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Have an idea? Let’s build something great together",
+      title: "Open to software engineering opportunities and impactful product development",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
