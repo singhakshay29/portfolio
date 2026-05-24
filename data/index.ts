@@ -97,6 +97,18 @@ export const navItems = [
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/next.svg"],
       link: "/projects/portfolio",
     },
+    {
+      id: 4,
+      title: "Amazon Music Clone",
+      des: "A responsive Amazon Music clone with playlist browsing, API integration, and modern UI.",
+      img: "/project4.png",
+      iconLists: [
+        "/js.svg",
+        "/css.svg",
+        "/re.svg",
+      ],
+      link: "/projects/amazonMusic",
+    },
   ];
   
   export const testimonials = [
