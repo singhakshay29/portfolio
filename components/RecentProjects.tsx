@@ -4,23 +4,22 @@ import { projects } from "@/data";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
-//import MagicButton from "./ui/MagicButton";
+
 
 const RecentProjects = () => {
-  //const [ show ,setShow] = useState(false);
   return (
-    <div className='py-10 relative z-[20]' id='projects'>
+    <div className='py-12 relative z-[20]' id='projects'>
       <h1 className='heading'>
         A small selection of{" "}
         <span className='text-purple'>recent projects</span>
       </h1>
-      <div className='flex flex-wrap items-center justify-center py-4 gap-x-24 gap-y-10 mt-10'>
+      <div className='flex flex-wrap items-center justify-center gap-y-10 gap-x-14 '>
         {projects.map((project) => (
           <div
             key={project.id}
-            className='sm:h-[41rem] h-[32rem] flex items-center justify-center sm:w-[30.625rem] w-[90vw] sm:px-0'>
+            className=' h-[32rem] flex  items-center justify-center sm:w-[22rem] sm:px-0'>
             <PinContainer title={project.link} href={project.link}>
-              <div className='relative flex items-center justify-center sm:w-[30.625rem] w-full overflow-hidden  h-[30vh] mb-10 p-2'>
+              <div className='relative flex items-center justify-center sm:w-[22rem] w-full overflow-hidden  h-[30vh] mb-10 p-2'>
                 <div className='absolute inset-0 overflow-hidden lg:rounded-3xl bg-[#13162d]'>
                   <Image
                     src='/bg.png'
@@ -74,13 +73,6 @@ const RecentProjects = () => {
             </PinContainer>
           </div>
         ))}
-        {/*
-        <MagicButton
-          title='Show More'
-          icon={<FaLocationArrow />}
-          position='right'
-          handleClick={() => setShow(!show)}
-        />*/}
       </div>
     </div>
   );
