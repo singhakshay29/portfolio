@@ -73,6 +73,13 @@ export const navItems = [
 
   
   export const projects = [
+    { id: 76,
+      title: "ResumeAnalyzer AI",
+      des: "AI-powered platform for personalized interview preparation and skill gap analysis.",
+      img: "/ResumeAnalyzer.png",
+      iconLists: ["/re.svg","nodejs.svg","Sass.svg","docker-icon.svg","MongoDB.svg",],
+      link: "/projects/ResumeAnalyzer",
+    },
     {
       id: 1,
       title: "LiveDocs",
@@ -82,20 +89,20 @@ export const navItems = [
       link: "/projects/LiveDocs",
     },
     {
-      id: 2,
-      title: "The Souled Store Clone",
-      des: "An e-commerce clone showcasing product browsing, filters, wishlist, and cart functionality.",
-      img: "/project2.jpg",
-      iconLists: ["/HTML5.svg", "/css.svg", "/js.svg", "/re.svg","/reduxlogo.svg"],
-      link: "/projects/SouledStore",
-    },
-    {
       id: 3,
       title: "Modern Portfolio",
       des: "Showcase your work with a sleek, interactive portfolio powered by Next.js & Three.js.",
       img: "/Untitled.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/next.svg"],
       link: "/projects/portfolio",
+    },
+    {
+      id: 2,
+      title: "The Souled Store Clone",
+      des: "An e-commerce clone showcasing product browsing, filters, wishlist, and cart functionality.",
+      img: "/project2.jpg",
+      iconLists: ["/HTML5.svg", "/css.svg", "/js.svg", "/re.svg","/reduxlogo.svg"],
+      link: "/projects/SouledStore",
     },
     {
       id: 4,
