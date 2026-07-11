@@ -75,7 +75,7 @@ const ResumeAIDocs = () => {
               <div className='flex gap-4'>
                 <TooltipTrigger asChild>
                   <a
-                    href='http://docker-aws-resumeai-387703527.ap-northeast-1.elb.amazonaws.com/'
+                    href='https://resume-analyzer-ai-lime-nine.vercel.app/'
                     target='_blank'
                     rel='noopener noreferrer'>
                     <MagicButton
