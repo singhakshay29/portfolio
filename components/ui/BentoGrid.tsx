@@ -5,8 +5,6 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "@/components/ui/GridGlobe";
 import {useState} from "react";
 import animationData from "@/data/confetti.json"
-import { IoCopyOutline } from "react-icons/io5";
-import MagicButton from "./MagicButton";
 import Lottie from "react-lottie";
 
 
@@ -48,21 +46,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const [copied, setCopied] = useState(false)
-  const handleCopy = async() => {
-    try {
-      await navigator.clipboard.writeText("akshay2898.as@gmail.com");
-  
-      setCopied(true);
-  
-      setTimeout(() => {
-        setCopied(false);
-      }, 2000);
-    } catch (error) {
-      console.log("Copy failed", error);
-    }
-    
-  }
+  const [copied,] = useState(false)
+
   return (
     <div
       className={cn(
@@ -141,7 +126,7 @@ export const BentoGridItem = ({
 
               }} />
               </div>
-              <MagicButton title={copied? 'Email Copied' : 'Copy my email'} icon={<IoCopyOutline/>} position="left" otherClasses="!bg-[#161a31]" handleClick={()=>handleCopy()}/>
+            
           </div>
         )}
       </div>

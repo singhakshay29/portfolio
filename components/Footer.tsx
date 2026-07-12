@@ -1,8 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
-
 import { socialMedia } from "@/data";
-import MagicButton from "@/components/ui/MagicButton";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -27,27 +23,6 @@ const Footer = () => {
         </p>
         <div className='flex items-center justify-center gap-4 flex-wrap'>
           
-        <a href='mailto:akshay2898.as@gmail.com' className='cursor-pointer'>
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position='right'
-          
-          />
-        </a>
-        <a
-        href='https://wa.me/917607607977?text=Hi%20Akshay%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you!'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='cursor-pointer'
-          >
-            <MagicButton
-              title='Chat on WhatsApp'
-              icon={<FaWhatsapp />}
-              position='right'
-            
-            />
-          </a>
         </div>
       </div>
       

@@ -1,13 +1,10 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
 import ScrollDownIcon from "./scroll-down-icon";
 import {
   Tooltip,
   TooltipContent,
-  TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/Tooltip";
 
@@ -46,15 +43,7 @@ const Hero = () => {
 
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger asChild>
-                <a href="https://drive.google.com/file/d/1CleYyH0_OU4maMyizjjbfno0rI7UsgfH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <MagicButton
-                    title="View Resume"
-                    icon={<FaLocationArrow />}
-                    position="right"
-                  />
-                </a>
-              </TooltipTrigger>
+             
               <TooltipContent
                 side="top"
                 className="bg-black-100 border border-white/[0.2] text-white shadow-xl"
