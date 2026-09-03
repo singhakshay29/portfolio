@@ -58,7 +58,7 @@ const HeroPortfolio = () => {
             <Tooltip>
               <div className="flex gap-4">
                 <TooltipTrigger asChild>
-                  <a href="https://www.priyanshweb.com/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://portfolio-ipxm.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <MagicButton
                       title="Live Demo"
                       icon={<FaExternalLinkAlt />}
@@ -67,7 +67,7 @@ const HeroPortfolio = () => {
                   </a>
                 </TooltipTrigger>
                 <TooltipTrigger asChild>
-                  <a href="https://github.com/priyansh-priyansh/modern-portfolio" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/singhakshay29/portfolio" target="_blank" rel="noopener noreferrer">
                     <MagicButton
                       title="View Source"
                       icon={<FaGithub />}
